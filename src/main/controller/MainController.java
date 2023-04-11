@@ -1,5 +1,6 @@
 package main.controller;
 
+import main.actions.ConvertToXmlAction;
 import main.actions.OpenAction;
 import main.view.EditorPanel;
 import main.view.MainView;
@@ -24,7 +25,11 @@ public class MainController {
        JMenu file = new JMenu("File");
        JMenuItem menuItem = new JMenuItem(openAction);
        file.add(menuItem);
+       JMenu actions = new JMenu("Actions");
+       JMenuItem actionItem = new JMenuItem(new ConvertToXmlAction(mainView, panel.getTextContent()));
+       actions.add(actionItem);
        menu.add(file);
+       menu.add(actions);
        mainView.addMainMenu(menu);
     }
 

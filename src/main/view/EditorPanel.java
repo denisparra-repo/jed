@@ -20,4 +20,8 @@ public class EditorPanel extends JPanel implements ChangeEditorTextListener {
             panelText.append(String.format("%s", text));
         });
     }
+
+    public JTextArea getTextContent() {
+        return panelText;
+    }
 }

@@ -18,7 +18,7 @@ public class OpenAction extends AbstractAction {
     private ArrayList<ChangeEditorTextListener> listeners = new ArrayList<>();
 
     public OpenAction(JFrame parent) {
-        super("File");
+        super("Open");
         this.parent = parent;
     }
 

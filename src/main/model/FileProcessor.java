@@ -28,7 +28,7 @@ public class FileProcessor extends Thread {
     @Override
     public void run() {
         boolean flag = true;
-        while(true){
+        while(flag){
             FileInputStream inputStream = null;
             Scanner sc = null;
             try {
